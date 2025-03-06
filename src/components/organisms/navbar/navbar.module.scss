@@ -1,0 +1,28 @@
+@use '../../../styles/variables' as *;
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+
+    &.withChildren {
+        justify-content: space-between;
+    }
+
+    .link{
+        text-decoration: none;
+        color: $color-primary;
+    }
+
+    .navContainer{
+        display: flex;
+        gap: 0.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title{
+        font-size: 2rem;
+    }
+}
