@@ -1,0 +1,74 @@
+@use '../../../styles/variables' as *;
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 6rem;
+
+    .title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    .paragraph {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+        font-weight: 500;
+    }
+
+    .card {
+        background-color: $color-card;
+        cursor: pointer;
+        padding: 3rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .textCard {
+            font-weight: 500;
+        }
+
+        .icon {
+            font-size: 4rem;
+            color: $color-primary;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-secondary;
+
+            .icon {
+                color: $color-secondary;
+            }
+        }
+    }
+
+    .descriptionColumn,
+    .descriptionColumnTwo,
+    .descriptionColumnThree {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+        padding: 8rem 1rem;
+
+        .title {
+            font-size: 2rem;
+        }
+
+        .paragraph {
+            font-size: 1.1rem;
+        }
+    }
+}
