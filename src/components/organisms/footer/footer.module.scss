@@ -1,0 +1,13 @@
+@use '../../../styles/variables' as *;
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    
+    .title, .copyright{
+        color: $color-primary;
+        font-weight: 700;
+    }
+}
